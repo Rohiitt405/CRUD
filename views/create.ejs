@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title> 
+    <link rel="stylesheet" href="../stylesheets/create.css">       
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="/read" class="read-users-link">
+                ← Read Users
+            </a>
+            <h1 class="form-title">Create User</h1>
+            <p class="form-subtitle">Add a new user to your system</p>
+        </div>
+        
+        <form action="/create" method="post" class="form-container" id="createUserForm">
+            <div class="input-group">
+                <label class="input-label">Name</label>
+                <input 
+                    type="text"
+                    class="form-input" 
+                    placeholder="John Doe" 
+                    name="name"
+                >
+            </div>
+            
+            <div class="input-group">
+                <label class="input-label">Email</label>
+                <input 
+                    type="email" 
+                    class="form-input" 
+                    placeholder="john@example.com" 
+                    name="email"
+                >
+            </div>
+            
+            <div class="input-group">
+                <label class="input-label">Image URL</label>
+                <input 
+                    type="url" 
+                    class="form-input" 
+                    placeholder="https://..." 
+                    name="image"
+                >
+            </div>
+            
+            <button type="submit" class="create-btn">
+                Create User
+            </button>
+        </form>
+    </div>
+</body>
+</html>
